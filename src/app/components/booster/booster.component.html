@@ -7,9 +7,9 @@
       <i class="mdi mdi-plus"></i>
     </button>
   </span>
-  <input type="text" class="form-control" 
-          placeholder="Product Name" aria-label="algo"
-          name="percentage" [(ngModel)]="percentage">
+  <input type="number" class="form-control" max="100" min="0" 
+          placeholder="Product Name" aria-label="algo" #progressInput
+          name="percentage" [(ngModel)]="percentage" (ngModelChange)="onChanges($event)" >
   <span class="input-group-btn">
     <button class="btn btn-primary" type="button" (click)="changeVal(-5)" >
       <i class="mdi mdi-minus"></i>
