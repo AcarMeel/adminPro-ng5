@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class ProgressComponent implements OnInit {
-
+  parentLabel: string = 'Parent';
   constructor() { }
 
   ngOnInit() {
   }
+
+
+
 
 }

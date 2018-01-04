@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 // import { SharedService } from './services/shared.service';
 // import { SidebarService } from './services/sidebar.service';
@@ -15,6 +16,8 @@ import { RegisterComponent } from './login/register.component';
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,8 @@ import { RegisterComponent } from './login/register.component';
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    FormsModule
     // SharedService,
     // SidebarService
   ],

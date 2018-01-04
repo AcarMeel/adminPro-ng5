@@ -1,0 +1,18 @@
+<h3>{{label}}</h3>
+<div class="input-group">
+  <span class="input-group-btn">
+    <button class="btn btn-primary" 
+            type="button"
+            (click)="changeVal(5)">
+      <i class="mdi mdi-plus"></i>
+    </button>
+  </span>
+  <input type="text" class="form-control" 
+          placeholder="Product Name" aria-label="algo"
+          name="percentage" [(ngModel)]="percentage">
+  <span class="input-group-btn">
+    <button class="btn btn-primary" type="button" (click)="changeVal(-5)" >
+      <i class="mdi mdi-minus"></i>
+    </button>
+  </span>
+</div>

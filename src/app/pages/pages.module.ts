@@ -6,6 +6,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Graph1Component } from './graph1/graph1.component';
 import {PAGES_ROUTES} from './pages.routes';
+import { FormsModule } from '@angular/forms';
+import { BoosterComponent } from '../components/booster/booster.component';
 
 
 @NgModule({
@@ -14,15 +16,18 @@ import {PAGES_ROUTES} from './pages.routes';
         DashboardComponent,
         ProgressComponent,
         Graph1Component,
+        BoosterComponent
     ],
     exports: [
         DashboardComponent,
         ProgressComponent,
-        Graph1Component
+        Graph1Component,
+        BoosterComponent
     ],
     imports: [
         SharedModule,
-        PAGES_ROUTES
+        PAGES_ROUTES,
+        FormsModule
     ]
 })
 
