@@ -10,7 +10,8 @@ import { Graph1Component } from './graph1/graph1.component';
 import {PAGES_ROUTES} from './pages.routes';
 import { FormsModule } from '@angular/forms';
 import { BoosterComponent } from '../components/booster/booster.component';
-import {GraphDonutComponent} from "../components/graph-donut/graph-donut.component";
+import {GraphDonutComponent} from '../components/graph-donut/graph-donut.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {GraphDonutComponent} from "../components/graph-donut/graph-donut.compone
         ProgressComponent,
         Graph1Component,
         BoosterComponent,
-        GraphDonutComponent
+        GraphDonutComponent,
+        AccountSettingsComponent
     ],
     exports: [
         DashboardComponent,
