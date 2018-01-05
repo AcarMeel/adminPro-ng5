@@ -12,6 +12,7 @@ import { PagesModule } from './pages/pages.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+import { SettingsService } from './services/settings.service';
 
 
 
@@ -32,7 +33,7 @@ import { RegisterComponent } from './login/register.component';
     // SharedService,
     // SidebarService
   ],
-  providers: [],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

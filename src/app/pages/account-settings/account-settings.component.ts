@@ -1,6 +1,6 @@
-import { Component, Inject, OnInit } from '@angular/core';
-import { DOCUMENT } from '@angular/platform-browser';
+import { Component, OnInit } from '@angular/core';
 import { element } from 'protractor';
+import { SettingsService } from '../../services/settings.service';
 
 @Component({
   selector: 'app-account-settings',
@@ -8,23 +8,26 @@ import { element } from 'protractor';
   styles: []
 })
 export class AccountSettingsComponent implements OnInit {
-  constructor( @Inject(DOCUMENT) private _document) { }
+  constructor(public _settings: SettingsService) { }
 
   ngOnInit() {
+    this.setWorkingTheme();
   }
 
-  changeThemeColor(theme: string, el: any) {
-    this.setWorkingTheme(el);
-    const path  = `assets/css/colors/${theme}.css`;
-    this._document.getElementById('theme').setAttribute('href', path);
+  changeThemeColor(theme: string) {
+    this._settings.applyTheme(theme);
+    this.setWorkingTheme();
   }
-
-  setWorkingTheme(el: any) {
+  setWorkingTheme() {
+    // Applies the class 'working' to the selected element
    const selectors: any = document.getElementsByClassName('selector');
+   let currentTheme = this._settings.settings.theme;
    for (const ref of selectors) {
-    ref.classList.remove('working');
+    if (ref.getAttribute('data-theme') === currentTheme) {
+      ref.classList.add('working');
+    } else {
+      ref.classList.remove('working');
+    }
    }
-   el.classList.add('working');
   }
-
 }
