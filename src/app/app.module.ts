@@ -1,18 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-
-// import { SharedService } from './services/shared.service';
-// import { SidebarService } from './services/sidebar.service';
 
 import { APP_ROUTES } from './app.routes';
+
+import { ServiceModule } from './services/service.module';
 
 import { PagesModule } from './pages/pages.module';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-import { SettingsService } from './services/settings.service';
+
 
 
 
@@ -29,11 +27,9 @@ import { SettingsService } from './services/settings.service';
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
-    // SharedService,
-    // SidebarService
+    ServiceModule
   ],
-  providers: [SettingsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

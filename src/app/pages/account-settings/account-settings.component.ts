@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { element } from 'protractor';
-import { SettingsService } from '../../services/settings.service';
+import { SettingsService } from '../../services/service.index';
 
 @Component({
   selector: 'app-account-settings',
