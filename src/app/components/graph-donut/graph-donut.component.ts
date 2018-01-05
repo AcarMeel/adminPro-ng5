@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-graph-donut',
@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class GraphDonutComponent implements OnInit {
-  public doughnutChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-  public doughnutChartData: number[] = [350, 450, 100];
-  public doughnutChartType: string = 'doughnut';
+  @Input() doughnutChartLabels: string[] = [];
+  @Input() doughnutChartData: number[] = [];
+  @Input() doughnutChartType: string = '';
 
   constructor() { }
 

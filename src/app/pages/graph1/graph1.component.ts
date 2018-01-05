@@ -6,30 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class Graph1Component implements OnInit {
-  graficos: any = {
-    'grafico1': {
-      'labels': ['Con Frijoles', 'Con Natilla', 'Con tocino'],
+  graphs: any = {
+    'graph1': {
+      'labels': ['Death Note', 'Sakura', 'Digimon'],
       'data':  [24, 30, 46],
       'type': 'doughnut',
-      'leyenda': 'El pan se come con'
+      'label': 'Most seen anime'
     },
-    'grafico2': {
-      'labels': ['Hombres', 'Mujeres'],
+    'graph2': {
+      'labels': ['Male', 'Female'],
       'data':  [4500, 6000],
       'type': 'doughnut',
-      'leyenda': 'Entrevistados'
+      'label': 'Which characters are more popular in anime?'
     },
-    'grafico3': {
+    'graph3': {
       'labels': ['Si', 'No'],
       'data':  [95, 5],
       'type': 'doughnut',
-      'leyenda': '¿Le dan gases los frijoles?'
+      'label': 'Is anime popular around the world?'
     },
-    'grafico4': {
+    'graph4': {
       'labels': ['No', 'Si'],
       'data':  [85, 15],
       'type': 'doughnut',
-      'leyenda': '¿Le importa que le den gases?'
+      'label': 'Do you like anime?'
     },
   };
 

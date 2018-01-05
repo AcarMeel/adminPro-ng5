@@ -1,17 +1,41 @@
 <div class="row">
   <div class="col-6">
-    <app-graph-donut></app-graph-donut>
+    <h3>{{graphs.graph1.label}}</h3>
+    <app-graph-donut
+      [doughnutChartLabels]="graphs.graph1.labels"
+      [doughnutChartData]="graphs.graph1.data"
+      [doughnutChartType]="graphs.graph1.type"  
+    >
+    </app-graph-donut>
   </div>
   <div class="col-6">
-    <app-graph-donut></app-graph-donut>
+    <h3>{{graphs.graph2.label}}</h3>
+    <app-graph-donut
+      [doughnutChartLabels]="graphs.graph2.labels"
+      [doughnutChartData]="graphs.graph2.data"
+      [doughnutChartType]="graphs.graph2.type"  
+    >
+    </app-graph-donut>
   </div>
 </div>
 <br><br>
 <div class="row">
   <div class="col-6">
-    <app-graph-donut></app-graph-donut>
+    <h3>{{graphs.graph3.label}}</h3>
+    <app-graph-donut
+      [doughnutChartLabels]="graphs.graph3.labels"
+      [doughnutChartData]="graphs.graph3.data"
+      [doughnutChartType]="graphs.graph3.type"  
+    >
+    </app-graph-donut>
   </div>
   <div class="col-6">
-    <app-graph-donut></app-graph-donut>
+    <h3>{{graphs.graph4.label}}</h3>
+    <app-graph-donut
+      [doughnutChartLabels]="graphs.graph4.labels"
+      [doughnutChartData]="graphs.graph4.data"
+      [doughnutChartType]="graphs.graph4.type"  
+    >
+    </app-graph-donut>
   </div>
 </div>
