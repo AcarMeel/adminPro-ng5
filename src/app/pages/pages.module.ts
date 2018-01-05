@@ -10,6 +10,7 @@ import { Graph1Component } from './graph1/graph1.component';
 import {PAGES_ROUTES} from './pages.routes';
 import { FormsModule } from '@angular/forms';
 import { BoosterComponent } from '../components/booster/booster.component';
+import {GraphDonutComponent} from "../components/graph-donut/graph-donut.component";
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { BoosterComponent } from '../components/booster/booster.component';
         DashboardComponent,
         ProgressComponent,
         Graph1Component,
-        BoosterComponent
+        BoosterComponent,
+        GraphDonutComponent
     ],
     exports: [
         DashboardComponent,
