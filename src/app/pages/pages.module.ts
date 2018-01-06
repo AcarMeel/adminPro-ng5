@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { BoosterComponent } from '../components/booster/booster.component';
 import {GraphDonutComponent} from '../components/graph-donut/graph-donut.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromisesComponent } from './promises/promises.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         Graph1Component,
         BoosterComponent,
         GraphDonutComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromisesComponent
     ],
     exports: [
         DashboardComponent,

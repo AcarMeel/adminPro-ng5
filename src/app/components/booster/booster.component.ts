@@ -12,7 +12,7 @@ export class BoosterComponent implements OnInit {
   @Input() percentage: number = 5;
   @Input() label: string = 'child label';
   @Output() valueChanged: EventEmitter<number> = new EventEmitter();
-  
+
 
   constructor() { }
 
